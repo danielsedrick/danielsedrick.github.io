@@ -118,7 +118,7 @@ footer #speed {
 @media screen and (max-width: 700px) {
     footer #speed {
         display: inline-block;
-        widows: 48%;
+    /*   windows: 48%; */
 
     }
 }
