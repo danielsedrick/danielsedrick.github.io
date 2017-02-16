@@ -88,6 +88,10 @@ p
     margin: 5px 0px 35px 15px;
 }
 
+#hourly {
+    display: none;
+}
+
 footer {
     clear: both;
     width: auto;
@@ -238,6 +242,32 @@ footer #direction {
         margin: auto;
         padding: 10px;
         padding-bottom: 24px;
+    }
+
+    #hourly {
+        display: inline;
+        margin: -450px 12px 0px 0px;
+        width: 706px;
+        height: 50px;
+        overflow: scroll;
+        float: right;
+        background-color: lightseagreen;
+        border: solid;
+        border-width: 5px 5px 5px 5px;
+        border-color: black;
+        white-space: nowrap;
+    }
+
+    #scrollbox li {
+        display: inline;
+        align-content: center;
+        font-size: 1em;
+        margin-top: 40px;
+        list-style: none;
+        display: inline-block;
+        color: white;
+        margin: auto 40px;
+        padding: 0px;
     }
 
     #sunny {
@@ -433,4 +463,25 @@ footer #direction {
         }
     }
 
+    #hourly {
+        display: block;
+        margin: -400px 225px 0px 0px;
+        width: 150px;
+        height: 300px;
+        overflow: scroll;
+        float: right;
+        background-color: lightseagreen;
+        border: solid;
+        border-width: 7px 15px 7px 0px;
+        border-color: black;
+    }
+
+    #scrollbox li {
+        align-content: center;
+        font-size: 2em;
+        margin-top: 40px;
+        list-style: none;
+        color: white;
+        margin: 40px auto;
+    }
 }
