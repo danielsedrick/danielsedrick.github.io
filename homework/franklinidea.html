@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Franklin Weather Report</title>
-    <link rel="stylesheet" type="text/css" href="franklinidea.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/flextest.css" media="screen">
     <meta name="viewport" content="width=device-width">
 </head>
 <body id="wrapper">
@@ -15,9 +15,9 @@
         </form> -->
         <nav id="page-nav">
             <ul>
-                <li><a href="/index.html" title="Drop down Menu">Menu</a></li>
+                <li><a href="/index.html" title="Drop down Menu">Home</a></li>
                 <li><a href="#" title="Logo/Home button">Weather</a></li>
-                <li><a href="#" title="Location List">Location</a></li>
+                <li><a href="weathertransitionpage.html" title="Location List">Location</a></li>
             </ul>
         </nav>
     </header>
@@ -29,13 +29,32 @@
             <div class="r2-c1"><h2>Franklin, ID</h2></div>
         </div>
         <div class="row">
-            <div class="r3-c1"><img src="../images/franklinweathersunny.png" alt="Sunny" title="sunnyday"></div>
-            <div id="widestyles">
-                <div class="r3-c2"><p>High</p>90<sup>&deg;F</sup></div>
-                <div class="r3-c3"><p>Low</p>60<sup>&deg;F</sup></div>
+            <div id="flex_container">
+                <div id="widestyles">
+                    <div id="r3-c2" class="flex_item"><p>High</p>90<sup>&deg;F</sup></div>
+                    <div id="r3-c3" class="flex_item"><p>Low</p>60<sup>&deg;F</sup></div>
+                </div>
+                <div id="r3-c1" class="flex_item"><img src="../images/franklinweathersunny.png" alt="Sunny" title="sunnyday"></div>
             </div>
-            <div id="hourly">
-                <ul id="scrollbox">
+
+        </div>
+        <h3 id="sunny">Sunny &shy; | &shy; 0% precip</h3>
+        <footer>
+            <h3>Wind</h3>
+            <div id="footerinfo">
+                <div id="speed">
+                    <h4>Speed</h4>
+                    <p>1- 5 mph</p>
+                </div>
+                <div id="direction">
+                    <h4>Direction</h4>
+                    <p>Southwest</p>
+                </div>
+            </div>
+
+        </footer>
+        <div id="hourly">
+            <ul id="scrollbox">
                 <li>Hourly Temp</li>
                 <li>12am<br>67&deg;F</li>
                 <li>1am<br>67&deg;F</li>
@@ -61,24 +80,8 @@
                 <li>9pm<br>69&deg;F</li>
                 <li>10pm<br>69&deg;F</li>
                 <li>11pm<br>69&deg;F</li>
-                </ul>
-            </div>
+            </ul>
         </div>
-        <h3 id="sunny">Sunny &shy; | &shy; 0% precip</h3>
-        <footer>
-            <div>
-                <h3>Wind</h3>
-                <div id="speed">
-                    <h4>Speed</h4>
-                    <p>1- 5 mph</p>
-                </div>
-                <div id="direction">
-                    <h4>Direction</h4>
-                    <p>Southwest</p>
-                </div>
-            </div>
-
-        </footer>
 <!--
         just an earlier idea I had.
         <div class="row">

@@ -1,0 +1,48 @@
+#wrapper {
+    background-color: slategrey;
+
+}
+
+h1 {
+    justify-content: center;
+    text-align: center;
+    background-color: darkblue;
+    color: aliceblue;
+    width: 75%;
+    display: flex;
+    margin: auto
+}
+
+#center{
+    display: flex;
+    justify-content: center
+}
+
+h2 {
+    text-align: center
+}
+
+main ul{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+li{
+    font-size: 5em;
+    width: auto;
+    height: auto;
+    list-style: none;
+    padding: .4em;
+    border-radius: 20px;
+    background-color: midnightblue;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}

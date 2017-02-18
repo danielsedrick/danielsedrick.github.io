@@ -1,0 +1,10 @@
+#page-nav
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#page-nav li
+{
+
+}
