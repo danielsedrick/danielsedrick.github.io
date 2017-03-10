@@ -5,6 +5,7 @@
     <title>Alcove Digital Systems</title>
     <link rel="stylesheet" href="css/style.css">
 <!--	<script src="js/jquery-3.0.0.min.js"></script>-->
+<!--
     <script
             src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -29,6 +30,7 @@
 
         })
     </script>
+-->
 </head>
 <body>
 <!-- Master Container Div -->
@@ -123,11 +125,40 @@
         <div class="footer">
             <h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
         </div>
+        <footer>
+            <ul>
+                <li><a href="/homework/Week10/intro-jquery-files/Lesson4/InsertHTMLBegin.htm" title="Part 2">InsertHTMLBegin.htm (Part 2)</a></li>
+                <li><a href="/homework/Week10/intro-jquery-files/Lesson4/animatedMenuBegin.htm" title="Part 3">AnimatedMenuBegin.htm (Part 3)</a></li>
+                <li><a href="/homework/Week10/intro-jquery-files/Lesson4/toggleButtonBegin.htm" title="Part 4">ToggleButtonBegin (Part 4)</a></li>
+                <li><a href="/homework/Week10/intro-jquery-files/Lesson4/DropDownMenuBegin.htm" title="Part 5">DropDownMenuBegin.htm (Part 5)</a></li>
+                <li><a href="/homework/Week10/intro-jquery-files/Lesson4/fruitBasketBegin.htm" title="Part 6">fruitBasketBegin.htm (Part 6)</a></li>
+            </ul>
+        </footer>
     </div>
     <script
             src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
             crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            // jQuery Code goes here
+
+            var toggleStyle = function() {
+
+                var inputFields = $('input[type="text"]')
+
+                if( inputFields.css('background-color') === 'rgb(255, 0, 0)' ) {
+                    inputFields.css('background-color', 'rgb(255, 255, 255)');
+                } else {
+                    inputFields.css('background-color', 'rgb(255, 0, 0)' );
+
+                }
+            }
+
+            $('#ReqAQuoteBtn').click( toggleStyle )
+
+        })
+    </script>
 
 </body>
 </html>
