@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JSON Test</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $.ajax({
+                url: "../../homework/week5/weather:templates/weather.json",
+                dataType: "jsonp",
+                success: function (data) {
+                    var location = data['Franklin']['City'];
+                    var temp_f = data['Franklin']['High'];
+                    alert("Current temperature in " + location + " is: " + temp_f);
+                }
+            });
+        });
+    </script>
+
+    <body>
+
+    </body>
+</head>
+
+</html>
