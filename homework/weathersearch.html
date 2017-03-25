@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Search Page</title>
+        <link rel="stylesheet" type="text/css" href="/css/searchpage.css" media="screen">
+        <meta name="viewport" content="width+device-width">
+    </head>
+
+    <body id="wrapper">
+        <header id="page-header">
+
+            <h1>Dan's Weather Website Search Page</h1>
+        </header>
+        <div id="center">
+            <main>
+                <h2>Enter a Location</h2>
+                <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
+                    <input type="search" name="query" id="query">
+                    <input type="submit" name="submit" value="Search" id="send">
+                </form>
+                <div id="displays">
+                <h3 id="cityDisplay"></h3>
+                <h3 id="currentTemp"></h3>
+                <h3 id="summary"></h3>
+                <h3 id="feelslike"></h3>
+                <h3 id="high"></h3>
+                <h3 id="low"></h3>
+                </div>
+                <section id="searchResults">
+                    <h2>Search Results</h2>
+
+                </section>
+
+            </main>
+        </div>
+
+
+        <script src="/jsonweather-html/scripts/jquery-3.0.0.min.js"></script>
+        <script src="/search/ourjava.js"></script>
+
+
+    </body>
+
+</html>

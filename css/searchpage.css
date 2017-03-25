@@ -38,9 +38,7 @@ li{
     list-style: none;
     padding: .4em;
     border-radius: 20px;
-    background-color: midnightblue;
     text-align: center;
-    margin: 5px;
 }
 
 a {
@@ -48,6 +46,18 @@ a {
     color: aliceblue;
 }
 
-#search {
-    margin-top: 70px;
+form {
+    text-align: center;
+}
+
+#displays{
+    background-color: darkblue;
+    border-radius: 20px;
+}
+
+h3 {
+    margin: 15px;
+    color: lightgrey;
+    font-size: 2em;
+    text-align: center;
 }
