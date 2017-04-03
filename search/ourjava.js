@@ -41,7 +41,6 @@ $("#searchResults").on("click", "a", function (evt) {
             $("#cover").fadeOut(250);
             console.log(data);
 
-
         }
 
     });
@@ -50,11 +49,10 @@ $("#searchResults").on("click", "a", function (evt) {
         + jsonCity + ".json"
         , dataType: "jsonp"
         , success: function (data) {
-            console.log(data);
             var high = data.forecast.simpleforecast.forecastday[0].high.fahrenheit;
             var low = data.forecast.simpleforecast.forecastday[0].low.fahrenheit;
-
-            console.log(high);
+            console.log("High is " + high);
+            console.log("Low is " + low);
             $("#high").html("High Temperature: " + high);
             $("#low").html("Low Temperature: " + low);
         }
