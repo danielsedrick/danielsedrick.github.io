@@ -10,7 +10,7 @@ $.ajax({
         var traps = data['nav']['5'];
         console.log(traps);
 
-        $('#list-nav').html("<li><a href='#'>Home</a></li><li><a href='#'>Anvils</a></li><li><a href='#'>Explosives</a></li><li><a href='#'>Decoys</a></li><li><a href='#'>Traps</a></li>");
+        $('#list-nav').html("<li><a href='/acme/support/acmeindex.html'>Home</a></li><li><a href='#'>Anvils</a></li><li><a href='#'>Explosives</a></li><li><a href='#'>Decoys</a></li><li><a href='#'>Traps</a></li>");
 
         $('nav').on("click", "a", function (evt) {
             evt.preventDefault();
@@ -31,14 +31,18 @@ $.ajax({
 
 
             $("#main").hide();
+//
+//            if $('nav').on("click", "Home", function (evt) {
+//                $("#main").show;
+//            })
 
             var output = ('<img id="outputimg" alt="Product Image" src="' + path + '">');
             $("#prodimg").html(output);
-            $("#descrip").html(descrip);
-            $("#manu").html(manu);
-            $("#price").html(price);
-            $("#reviews").html(reviews);
-
+            $("#descrip").html("<h3>Description</h3>" + descrip);
+            $("#manu").html("<h3>Manufacturer:</h3>" + manu);
+            $("#price").html('<h3>Price</h3><p id="pricecolor">$' + price + "</p>");
+            $("#reviews").html("<h3></h3>" + reviews);
+            $("#tab").html(name + " - Acme")
 
         })
 
