@@ -1,0 +1,49 @@
+header {
+    display: inline-flex;
+    align-items: center;
+    border: solid;
+    border-color: black;
+    margin-left: 15%;
+}
+#logo{
+    width: 15%;
+}
+
+nav {
+}
+
+ul {
+    border: solid; border-width: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px;
+    align-content: center;
+}
+
+li {
+    list-style: none;
+    margin-left: 10px;
+    font-size: 100%;
+    border-right: solid;
+    text-align: center;
+    padding-right: 2%;
+    border-width: 1px;
+    font-size: 1.5em;
+
+}
+
+main {
+    width: 80%;
+    max-width: 920px;
+    margin: auto;
+    margin-top: -60px;
+}
+
+body {
+    margin: 0;
+}
+
+#raft1 {
+    width: auto;
+}
