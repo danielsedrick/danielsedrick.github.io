@@ -1,13 +1,18 @@
 header {
-
+    background-image: url(raftingbanner.jpg);
+    height: 200px;
+    width: 80%;
+    margin-left: 10%
 }
 
 #logodiv {
     width: 80%;
     height: auto;
-    margin-left: 10%;
-    display: flex;
-    justify-content: space-around;
+    margin-left: 14%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding-top: 2%;
+
 }
 
 #logo{
@@ -17,11 +22,12 @@ header {
 
 nav {
     background-color: #A07A58;
-    margin-bottom: 10px;
     width: 80%;
     margin: auto;
     margin-left: 10%;
+    margin-top: -12%;
     border: solid;
+    background-image:
 }
 
 ul {
@@ -73,8 +79,7 @@ body {
 }
 
 #bancont {
-    margin-top: 10%;
-    margin-bottom: -7%;
+    background-image: url(raftingbanner.jpg);
 }
 
 #banner {
@@ -91,6 +96,24 @@ p {
     margin-bottom: 0px;
     border-radius: 10px;
     padding: 10px;
+    display: flex;
+
+    margin-bottom: 30px;
+}
+
+#r1c1 {
+    width: 48%;
+    text-align: center;
+    padding: 5%;
+
+}
+
+#p1 {
+    line-height: 200%;
+    font-size: 110%;
+}
+
+#r1c2 {
 }
 
 #middle {
@@ -106,9 +129,29 @@ p {
     background-color: #478187;
     border-radius: 10px;
     padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+}
+
+#r3c1 {
+    width: 48%;
+    text-align: center;
+    padding: 5%;
+
+}
+
+#p2 {
+    line-height: 200%;
+    font-size: 110%;
+}
+
+#r3c2 {
+
 }
 
 #raft1 {
+    margin-top: 3%;
     margin-left: 5%;
     width: 90%;
     height: auto;
@@ -119,6 +162,7 @@ h2 {
 }
 
 #raft2 {
+    margin-top: 1%;
     margin-left: 5%;
     width: 90%;
     height: auto;
@@ -126,7 +170,7 @@ h2 {
 
 footer  {
     background-color: cornsilk;
-    margin-top: 5%;
+    margin-top: 2.5%;
     width: 80%;
     margin-left: 10%;
     display: flex;
