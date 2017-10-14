@@ -72,6 +72,15 @@ body {
 
 }
 
+#bancont {
+    margin-top: 10%;
+    margin-bottom: -7%;
+}
+
+#banner {
+    width: 100%;
+}
+
 p {
     padding: 0px;
     margin: 0px;
